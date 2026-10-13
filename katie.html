@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS drawing</title>
+
+    <style>
+        #big_window {
+            position: relative;
+            width: 700px;
+            height: 500px;
+            background-color: #b5b0a7;
+            overflow: hidden;
+        }
+
+        #building {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 700px;
+            height: 650px;
+            background-color: #b9b1a7;
+            border: 1px solid #817d75;
+            box-sizing: border-box;
+        }
+
+        
+        #top_wall {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 700px;
+            height: 150px;
+            background-color: #a9c9c9;
+            border-bottom: 5px solid #797f7c;
+        }
+
+        
+        .line {
+            position: absolute;
+            top: 0px;
+            width: 2px;
+            height: 150px;
+            background-color: #94b5b5;
+        }
+
+        
+        #brick_wall {
+            position: absolute;
+            top: 155px;
+            left: 0px;
+            width: 700px;
+            height: 495px;
+            background-color: #b9b0a6;
+        }
+
+        
+        .window {
+            position: absolute;
+            width: 65px;
+            height: 85px;
+            background-color: #53696a;
+            border: 8px solid #d0c9bd;
+            box-sizing: border-box;
+            box-shadow: inset 3px 3px 6px #303b3b;
+        }
+
+        
+        .small_window {
+            position: absolute;
+            top: 35px;
+            width: 65px;
+            height: 75px;
+            background-color: #647d80;
+            border: 6px solid #9ba9a6;
+            box-sizing: border-box;
+        }
+
+       
+        .vertical {
+            position: absolute;
+            width: 3px;
+            height: 100%;
+            left: 50%;
+            background-color: #394849;
+        }
+
+        .horizontal {
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            top: 50%;
+            background-color: #394849;
+        }
+
+   
+        #s1 { left: 20px; }
+        #s2 { left: 105px; }
+        #s3 { left: 190px; }
+        #s4 { left: 365px; }
+        #s5 { left: 455px; }
+        #s6 { left: 620px; }
+
+       
+        #w1 {
+            top: 220px;
+            left: 25px;
+            width: 150px;
+            height: 200px;
+        }
+
+        #w2 {
+            top: 205px;
+            left: 300px;
+            width: 150px;
+            height: 250px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="big_window">
+        <div id="building">
+
+            <div id="top_wall">
+                <div class="line" style="left: 80px;"></div>
+                <div class="line" style="left: 160px;"></div>
+                <div class="line" style="left: 240px;"></div>
+                <div class="line" style="left: 320px;"></div>
+                <div class="line" style="left: 400px;"></div>
+                <div class="line" style="left: 480px;"></div>
+                <div class="line" style="left: 560px;"></div>
+                <div class="line" style="left: 640px;"></div>
+
+                <div class="small_window" id="s1"></div>
+                <div class="small_window" id="s2"></div>
+                <div class="small_window" id="s3"></div>
+                <div class="small_window" id="s4"></div>
+                <div class="small_window" id="s5"></div>
+                <div class="small_window" id="s6"></div>
+            </div>
+
+            <div id="brick_wall"></div>
+
+            <div class="window" id="w1">
+                <div class="vertical"></div>
+                <div class="horizontal"></div>
+            </div>
+
+            <div class="window" id="w2">
+                <div class="vertical"></div>
+                <div class="horizontal"></div>
+            </div>
+
+         
+
+        </div>
+    </div>
+</body>
+</html>
